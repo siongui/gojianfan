@@ -1,0 +1,75 @@
+====================================================
+Traditional and Simplified Chinese Conversion in Go_
+====================================================
+
+Convert Traditional Chinese to/from Simplified Chinese in Go_.
+This implementation is based on `python-jianfan`_, and is very primitive.
+If you need advanced converter, visit OpenCC_ project.
+
+
+Install
++++++++
+
+.. code-block:: bash
+
+  $ go get -u github.com/siongui/gojianfan
+
+
+Usage
++++++
+
+.. code-block:: go
+
+  package main
+
+  import (
+  	"fmt"
+  	"github.com/siongui/gojianfan"
+  )
+
+  func main() {
+  	// Traditional Chinese to Simplified Chinese
+  	fmt.Println(gojianfan.T2S("橋頭"))
+
+  	// Simplified Chinese to Traditional Chinese
+  	fmt.Println(gojianfan.S2T("桥头"))
+  }
+
+Tested on:
+
+  - `Ubuntu 16.10`_
+  - `Go 1.8`_
+
+
+UNLICENSE
++++++++++
+
+Released in public domain. See UNLICENSE_.
+
+
+References
+++++++++++
+
+.. [1] `Jianfan - A python library for translation between traditional and simplified chinese <https://code.google.com/archive/p/python-jianfan/>`_
+.. [2] | `golang two way map - Google search <https://www.google.com/search?q=golang+two+way+map>`_
+       | `golang map - Google search <https://www.google.com/search?q=golang+map>`_
+.. [3] | `golang unicode - Google search <https://www.google.com/search?q=golang+unicode>`_
+       | `Strings, bytes, runes and characters in Go - The Go Blog <https://blog.golang.org/strings>`_
+       | `[Golang] Iterate Over UTF-8 Strings (non-ASCII strings) <https://siongui.github.io/2016/02/03/go-iterate-over-utf8-non-ascii-string/>`_
+.. [4] | `golang const string - Google search <https://www.google.com/search?q=golang+const+string>`_
+.. [5] | `golang package init - Google search <https://www.google.com/search?q=golang+package+init>`_
+.. [6] `開放中文轉換 Open Chinese Convert (OpenCC) <http://opencc.byvoid.com/>`_
+       (`source code <https://github.com/BYVoid/OpenCC>`__,
+       `online doc <http://byvoid.github.io/OpenCC/>`__)
+.. [7] `stevenyao/go-opencc · GitHub <https://github.com/stevenyao/go-opencc>`_
+       (OpenCC wrapper for Golang, |godoc1|)
+
+.. _Go: https://golang.org/
+.. _python-jianfan: https://code.google.com/archive/p/python-jianfan/
+.. _OpenCC: https://github.com/BYVoid/OpenCC
+.. _Ubuntu 16.10: http://releases.ubuntu.com/16.10/
+.. _Go 1.8: https://golang.org/dl/
+.. _UNLICENSE: http://unlicense.org/
+
+.. |godoc1| image:: https://godoc.org/github.com/stevenyao/go-opencc?status.png
+   :target: https://godoc.org/github.com/stevenyao/go-opencc
