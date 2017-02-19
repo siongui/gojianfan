@@ -2,6 +2,12 @@
 Traditional and Simplified Chinese Conversion in Go_
 ====================================================
 
+.. image:: https://godoc.org/github.com/siongui/gojianfan?status.png
+   :target: https://godoc.org/github.com/siongui/gojianfan
+
+.. image:: https://api.travis-ci.org/siongui/gojianfan.png?branch=master
+    :target: https://travis-ci.org/siongui/gojianfan
+
 Convert Traditional Chinese to/from Simplified Chinese in Go_.
 This implementation is based on `python-jianfan`_, and is very primitive.
 If you need advanced converter, visit OpenCC_ project.
@@ -63,6 +69,8 @@ References
        `online doc <http://byvoid.github.io/OpenCC/>`__)
 .. [7] `stevenyao/go-opencc · GitHub <https://github.com/stevenyao/go-opencc>`_
        (OpenCC wrapper for Golang, |godoc1|)
+.. [8] `[Golang] Converter for Traditional and Simplified Chinese <https://siongui.github.io/2017/02/19/go-converter-of-traditional-and-simplified-chinese/>`_
+.. [9] `godoctricks - GoDoc <https://godoc.org/github.com/fluhus/godoc-tricks>`_
 
 .. _Go: https://golang.org/
 .. _python-jianfan: https://code.google.com/archive/p/python-jianfan/

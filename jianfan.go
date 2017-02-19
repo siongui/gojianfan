@@ -1,3 +1,9 @@
+// Traditional and Simplified Chinese Conversion in Go.
+//
+// This is a primitive implementation of Chinese conversion, based on
+// python-jianfan https://code.google.com/archive/p/python-jianfan/
+// . If you need more advanced converter, please visit
+// OpenCC https://github.com/BYVoid/OpenCC
 package gojianfan
 
 import (
@@ -19,6 +25,7 @@ func init() {
 	}
 }
 
+// Convert Traditional Chinese to Simplified Chinese
 func T2S(s string) string {
 	var chs []rune
 	for _, runeValue := range s {
@@ -32,6 +39,7 @@ func T2S(s string) string {
 	return string(chs)
 }
 
+// Convert Simplified Chinese to Traditional Chinese
 func S2T(s string) string {
 	var cht []rune
 	for _, runeValue := range s {
