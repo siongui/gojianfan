@@ -71,6 +71,13 @@ References
        (OpenCC wrapper for Golang, |godoc1|)
 .. [8] `[Golang] Converter for Traditional and Simplified Chinese <https://siongui.github.io/2017/02/19/go-converter-of-traditional-and-simplified-chinese/>`_
 .. [9] `godoctricks - GoDoc <https://godoc.org/github.com/fluhus/godoc-tricks>`_
+.. [10] | `responsive textarea - Google search <https://www.google.com/search?q=responsive+textarea>`_
+        | `responsive textarea - DuckDuckGo search <https://duckduckgo.com/?q=responsive+textarea>`_
+        | `responsive textarea - Ecosia search <https://www.ecosia.org/search?q=responsive+textarea>`_
+        | `responsive textarea - Bing search <https://www.bing.com/search?q=responsive+textarea>`_
+        | `responsive textarea - Yahoo search <https://search.yahoo.com/search?p=responsive+textarea>`_
+        | `responsive textarea - Baidu search <https://www.baidu.com/s?wd=responsive+textarea>`_
+        | `responsive textarea - Yandex search <https://www.yandex.com/search/?text=responsive+textarea>`_
 
 .. _Go: https://golang.org/
 .. _python-jianfan: https://code.google.com/archive/p/python-jianfan/
