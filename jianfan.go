@@ -1,4 +1,5 @@
-// Traditional and Simplified Chinese Conversion in Go.
+// Package gojianfan provides Traditional and Simplified Chinese Conversion in
+// Go.
 //
 // This is a primitive implementation of Chinese conversion, based on
 // python-jianfan https://code.google.com/archive/p/python-jianfan/

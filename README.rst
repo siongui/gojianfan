@@ -91,7 +91,7 @@ References
         | `responsive textarea - Baidu search <https://www.baidu.com/s?wd=responsive+textarea>`_
         | `responsive textarea - Yandex search <https://www.yandex.com/search/?text=responsive+textarea>`_
 .. [11] `Go Report Card | Go project code quality report cards <https://goreportcard.com/>`_
-.. [12] ` Shields.io: Quality metadata badges for open source projects  <https://shields.io/>`_
+.. [12] `Shields.io: Quality metadata badges for open source projects  <https://shields.io/>`_
 
 .. _Go: https://golang.org/
 .. _python-jianfan: https://code.google.com/archive/p/python-jianfan/
