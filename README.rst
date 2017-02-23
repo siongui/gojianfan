@@ -2,11 +2,23 @@
 Traditional and Simplified Chinese Conversion in Go_
 ====================================================
 
+.. image:: https://img.shields.io/badge/Language-Go-blue.svg
+   :target: https://golang.org/
+
 .. image:: https://godoc.org/github.com/siongui/gojianfan?status.png
    :target: https://godoc.org/github.com/siongui/gojianfan
 
 .. image:: https://api.travis-ci.org/siongui/gojianfan.png?branch=master
-    :target: https://travis-ci.org/siongui/gojianfan
+   :target: https://travis-ci.org/siongui/gojianfan
+
+.. image:: https://goreportcard.com/badge/github.com/siongui/gojianfan
+   :target: https://goreportcard.com/report/github.com/siongui/gojianfan
+
+.. image:: https://img.shields.io/badge/license-Unlicense-blue.svg
+   :target: https://raw.githubusercontent.com/siongui/gojianfan/master/UNLICENSE
+
+.. image:: https://img.shields.io/twitter/url/https/github.com/siongui/gojianfan.svg?style=social
+   :target: https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D
 
 Convert Traditional Chinese to/from Simplified Chinese in Go_.
 This implementation is based on `python-jianfan`_, and is very primitive.
@@ -78,6 +90,8 @@ References
         | `responsive textarea - Yahoo search <https://search.yahoo.com/search?p=responsive+textarea>`_
         | `responsive textarea - Baidu search <https://www.baidu.com/s?wd=responsive+textarea>`_
         | `responsive textarea - Yandex search <https://www.yandex.com/search/?text=responsive+textarea>`_
+.. [11] `Go Report Card | Go project code quality report cards <https://goreportcard.com/>`_
+.. [12] ` Shields.io: Quality metadata badges for open source projects  <https://shields.io/>`_
 
 .. _Go: https://golang.org/
 .. _python-jianfan: https://code.google.com/archive/p/python-jianfan/
