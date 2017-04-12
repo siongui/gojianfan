@@ -118,9 +118,6 @@ var $substring = function(str, low, high) {
 };
 
 var $sliceToArray = function(slice) {
-  if (slice.$length === 0) {
-    return [];
-  }
   if (slice.$array.constructor !== Array) {
     return slice.$array.subarray(slice.$offset, slice.$offset + slice.$length);
   }
@@ -2383,10 +2380,1162 @@ $packages["github.com/siongui/godom"] = (function() {
 		return $parseInt(s.Object.length) >> 0;
 	};
 	CSSStyleDeclaration.prototype.Length = function() { return this.$val.Length(); };
+	CSSStyleDeclaration.ptr.prototype.AlignContent = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.alignContent, $String);
+	};
+	CSSStyleDeclaration.prototype.AlignContent = function() { return this.$val.AlignContent(); };
+	CSSStyleDeclaration.ptr.prototype.SetAlignContent = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.alignContent = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAlignContent = function(v) { return this.$val.SetAlignContent(v); };
+	CSSStyleDeclaration.ptr.prototype.AlignItems = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.alignItems, $String);
+	};
+	CSSStyleDeclaration.prototype.AlignItems = function() { return this.$val.AlignItems(); };
+	CSSStyleDeclaration.ptr.prototype.SetAlignItems = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.alignItems = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAlignItems = function(v) { return this.$val.SetAlignItems(v); };
+	CSSStyleDeclaration.ptr.prototype.AlignSelf = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.alignSelf, $String);
+	};
+	CSSStyleDeclaration.prototype.AlignSelf = function() { return this.$val.AlignSelf(); };
+	CSSStyleDeclaration.ptr.prototype.SetAlignSelf = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.alignSelf = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAlignSelf = function(v) { return this.$val.SetAlignSelf(v); };
+	CSSStyleDeclaration.ptr.prototype.Animation = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animation, $String);
+	};
+	CSSStyleDeclaration.prototype.Animation = function() { return this.$val.Animation(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimation = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animation = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimation = function(v) { return this.$val.SetAnimation(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationDelay = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationDelay, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationDelay = function() { return this.$val.AnimationDelay(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationDelay = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationDelay = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationDelay = function(v) { return this.$val.SetAnimationDelay(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationDirection = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationDirection, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationDirection = function() { return this.$val.AnimationDirection(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationDirection = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationDirection = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationDirection = function(v) { return this.$val.SetAnimationDirection(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationDuration = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationDuration, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationDuration = function() { return this.$val.AnimationDuration(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationDuration = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationDuration = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationDuration = function(v) { return this.$val.SetAnimationDuration(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationFillMode = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationFillMode, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationFillMode = function() { return this.$val.AnimationFillMode(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationFillMode = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationFillMode = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationFillMode = function(v) { return this.$val.SetAnimationFillMode(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationIterationCount = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationIterationCount, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationIterationCount = function() { return this.$val.AnimationIterationCount(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationIterationCount = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationIterationCount = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationIterationCount = function(v) { return this.$val.SetAnimationIterationCount(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationName = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationName, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationName = function() { return this.$val.AnimationName(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationName = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationName = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationName = function(v) { return this.$val.SetAnimationName(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationTimingFunction = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationTimingFunction, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationTimingFunction = function() { return this.$val.AnimationTimingFunction(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationTimingFunction = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationTimingFunction = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationTimingFunction = function(v) { return this.$val.SetAnimationTimingFunction(v); };
+	CSSStyleDeclaration.ptr.prototype.AnimationPlayState = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.animationPlayState, $String);
+	};
+	CSSStyleDeclaration.prototype.AnimationPlayState = function() { return this.$val.AnimationPlayState(); };
+	CSSStyleDeclaration.ptr.prototype.SetAnimationPlayState = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.animationPlayState = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetAnimationPlayState = function(v) { return this.$val.SetAnimationPlayState(v); };
+	CSSStyleDeclaration.ptr.prototype.Background = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.background, $String);
+	};
+	CSSStyleDeclaration.prototype.Background = function() { return this.$val.Background(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackground = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.background = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackground = function(v) { return this.$val.SetBackground(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundAttachment = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundAttachment, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundAttachment = function() { return this.$val.BackgroundAttachment(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundAttachment = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundAttachment = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundAttachment = function(v) { return this.$val.SetBackgroundAttachment(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundColor, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundColor = function() { return this.$val.BackgroundColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundColor = function(v) { return this.$val.SetBackgroundColor(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundImage = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundImage, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundImage = function() { return this.$val.BackgroundImage(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundImage = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundImage = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundImage = function(v) { return this.$val.SetBackgroundImage(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundPosition = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundPosition, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundPosition = function() { return this.$val.BackgroundPosition(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundPosition = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundPosition = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundPosition = function(v) { return this.$val.SetBackgroundPosition(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundRepeat = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundRepeat, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundRepeat = function() { return this.$val.BackgroundRepeat(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundRepeat = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundRepeat = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundRepeat = function(v) { return this.$val.SetBackgroundRepeat(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundClip = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundClip, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundClip = function() { return this.$val.BackgroundClip(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundClip = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundClip = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundClip = function(v) { return this.$val.SetBackgroundClip(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundOrigin = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundOrigin, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundOrigin = function() { return this.$val.BackgroundOrigin(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundOrigin = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundOrigin = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundOrigin = function(v) { return this.$val.SetBackgroundOrigin(v); };
+	CSSStyleDeclaration.ptr.prototype.BackgroundSize = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backgroundSize, $String);
+	};
+	CSSStyleDeclaration.prototype.BackgroundSize = function() { return this.$val.BackgroundSize(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackgroundSize = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backgroundSize = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackgroundSize = function(v) { return this.$val.SetBackgroundSize(v); };
+	CSSStyleDeclaration.ptr.prototype.BackfaceVisibility = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.backfaceVisibility, $String);
+	};
+	CSSStyleDeclaration.prototype.BackfaceVisibility = function() { return this.$val.BackfaceVisibility(); };
+	CSSStyleDeclaration.ptr.prototype.SetBackfaceVisibility = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.backfaceVisibility = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBackfaceVisibility = function(v) { return this.$val.SetBackfaceVisibility(v); };
+	CSSStyleDeclaration.ptr.prototype.Border = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.border, $String);
+	};
+	CSSStyleDeclaration.prototype.Border = function() { return this.$val.Border(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorder = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.border = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorder = function(v) { return this.$val.SetBorder(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderBottom = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderBottom, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderBottom = function() { return this.$val.BorderBottom(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderBottom = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderBottom = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderBottom = function(v) { return this.$val.SetBorderBottom(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderBottomColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderBottomColor, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderBottomColor = function() { return this.$val.BorderBottomColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderBottomColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderBottomColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderBottomColor = function(v) { return this.$val.SetBorderBottomColor(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderBottomLeftRadius = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderBottomLeftRadius, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderBottomLeftRadius = function() { return this.$val.BorderBottomLeftRadius(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderBottomLeftRadius = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderBottomLeftRadius = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderBottomLeftRadius = function(v) { return this.$val.SetBorderBottomLeftRadius(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderBottomRightRadius = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderBottomRightRadius, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderBottomRightRadius = function() { return this.$val.BorderBottomRightRadius(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderBottomRightRadius = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderBottomRightRadius = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderBottomRightRadius = function(v) { return this.$val.SetBorderBottomRightRadius(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderBottomStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderBottomStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderBottomStyle = function() { return this.$val.BorderBottomStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderBottomStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderBottomStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderBottomStyle = function(v) { return this.$val.SetBorderBottomStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderBottomWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderBottomWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderBottomWidth = function() { return this.$val.BorderBottomWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderBottomWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderBottomWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderBottomWidth = function(v) { return this.$val.SetBorderBottomWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderCollapse = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderCollapse, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderCollapse = function() { return this.$val.BorderCollapse(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderCollapse = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderCollapse = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderCollapse = function(v) { return this.$val.SetBorderCollapse(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderColor, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderColor = function() { return this.$val.BorderColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderColor = function(v) { return this.$val.SetBorderColor(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderImage = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderImage, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderImage = function() { return this.$val.BorderImage(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderImage = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderImage = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderImage = function(v) { return this.$val.SetBorderImage(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderImageOutset = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderImageOutset, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderImageOutset = function() { return this.$val.BorderImageOutset(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderImageOutset = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderImageOutset = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderImageOutset = function(v) { return this.$val.SetBorderImageOutset(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderImageRepeat = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderImageRepeat, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderImageRepeat = function() { return this.$val.BorderImageRepeat(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderImageRepeat = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderImageRepeat = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderImageRepeat = function(v) { return this.$val.SetBorderImageRepeat(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderImageSlice = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderImageSlice, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderImageSlice = function() { return this.$val.BorderImageSlice(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderImageSlice = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderImageSlice = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderImageSlice = function(v) { return this.$val.SetBorderImageSlice(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderImageSource = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderImageSource, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderImageSource = function() { return this.$val.BorderImageSource(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderImageSource = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderImageSource = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderImageSource = function(v) { return this.$val.SetBorderImageSource(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderImageWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderImageWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderImageWidth = function() { return this.$val.BorderImageWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderImageWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderImageWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderImageWidth = function(v) { return this.$val.SetBorderImageWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderLeft = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderLeft, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderLeft = function() { return this.$val.BorderLeft(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderLeft = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderLeft = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderLeft = function(v) { return this.$val.SetBorderLeft(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderLeftColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderLeftColor, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderLeftColor = function() { return this.$val.BorderLeftColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderLeftColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderLeftColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderLeftColor = function(v) { return this.$val.SetBorderLeftColor(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderLeftStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderLeftStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderLeftStyle = function() { return this.$val.BorderLeftStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderLeftStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderLeftStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderLeftStyle = function(v) { return this.$val.SetBorderLeftStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderLeftWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderLeftWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderLeftWidth = function() { return this.$val.BorderLeftWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderLeftWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderLeftWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderLeftWidth = function(v) { return this.$val.SetBorderLeftWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderRadius = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderRadius, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderRadius = function() { return this.$val.BorderRadius(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderRadius = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderRadius = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderRadius = function(v) { return this.$val.SetBorderRadius(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderRight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderRight, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderRight = function() { return this.$val.BorderRight(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderRight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderRight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderRight = function(v) { return this.$val.SetBorderRight(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderRightColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderRightColor, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderRightColor = function() { return this.$val.BorderRightColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderRightColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderRightColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderRightColor = function(v) { return this.$val.SetBorderRightColor(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderRightStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderRightStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderRightStyle = function() { return this.$val.BorderRightStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderRightStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderRightStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderRightStyle = function(v) { return this.$val.SetBorderRightStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderRightWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderRightWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderRightWidth = function() { return this.$val.BorderRightWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderRightWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderRightWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderRightWidth = function(v) { return this.$val.SetBorderRightWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderSpacing = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderSpacing, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderSpacing = function() { return this.$val.BorderSpacing(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderSpacing = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderSpacing = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderSpacing = function(v) { return this.$val.SetBorderSpacing(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderStyle = function() { return this.$val.BorderStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderStyle = function(v) { return this.$val.SetBorderStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderTop = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderTop, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderTop = function() { return this.$val.BorderTop(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderTop = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderTop = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderTop = function(v) { return this.$val.SetBorderTop(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderTopColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderTopColor, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderTopColor = function() { return this.$val.BorderTopColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderTopColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderTopColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderTopColor = function(v) { return this.$val.SetBorderTopColor(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderTopLeftRadius = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderTopLeftRadius, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderTopLeftRadius = function() { return this.$val.BorderTopLeftRadius(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderTopLeftRadius = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderTopLeftRadius = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderTopLeftRadius = function(v) { return this.$val.SetBorderTopLeftRadius(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderTopRightRadius = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderTopRightRadius, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderTopRightRadius = function() { return this.$val.BorderTopRightRadius(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderTopRightRadius = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderTopRightRadius = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderTopRightRadius = function(v) { return this.$val.SetBorderTopRightRadius(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderTopStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderTopStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderTopStyle = function() { return this.$val.BorderTopStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderTopStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderTopStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderTopStyle = function(v) { return this.$val.SetBorderTopStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderTopWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderTopWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderTopWidth = function() { return this.$val.BorderTopWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderTopWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderTopWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderTopWidth = function(v) { return this.$val.SetBorderTopWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.BorderWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.borderWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.BorderWidth = function() { return this.$val.BorderWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetBorderWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.borderWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBorderWidth = function(v) { return this.$val.SetBorderWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.Bottom = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.bottom, $String);
+	};
+	CSSStyleDeclaration.prototype.Bottom = function() { return this.$val.Bottom(); };
+	CSSStyleDeclaration.ptr.prototype.SetBottom = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.bottom = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBottom = function(v) { return this.$val.SetBottom(v); };
+	CSSStyleDeclaration.ptr.prototype.BoxShadow = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.boxShadow, $String);
+	};
+	CSSStyleDeclaration.prototype.BoxShadow = function() { return this.$val.BoxShadow(); };
+	CSSStyleDeclaration.ptr.prototype.SetBoxShadow = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.boxShadow = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBoxShadow = function(v) { return this.$val.SetBoxShadow(v); };
+	CSSStyleDeclaration.ptr.prototype.BoxSizing = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.boxSizing, $String);
+	};
+	CSSStyleDeclaration.prototype.BoxSizing = function() { return this.$val.BoxSizing(); };
+	CSSStyleDeclaration.ptr.prototype.SetBoxSizing = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.boxSizing = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetBoxSizing = function(v) { return this.$val.SetBoxSizing(v); };
+	CSSStyleDeclaration.ptr.prototype.CaptionSide = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.captionSide, $String);
+	};
+	CSSStyleDeclaration.prototype.CaptionSide = function() { return this.$val.CaptionSide(); };
+	CSSStyleDeclaration.ptr.prototype.SetCaptionSide = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.captionSide = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetCaptionSide = function(v) { return this.$val.SetCaptionSide(v); };
+	CSSStyleDeclaration.ptr.prototype.Clear = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.clear, $String);
+	};
+	CSSStyleDeclaration.prototype.Clear = function() { return this.$val.Clear(); };
+	CSSStyleDeclaration.ptr.prototype.SetClear = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.clear = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetClear = function(v) { return this.$val.SetClear(v); };
+	CSSStyleDeclaration.ptr.prototype.Clip = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.clip, $String);
+	};
+	CSSStyleDeclaration.prototype.Clip = function() { return this.$val.Clip(); };
+	CSSStyleDeclaration.ptr.prototype.SetClip = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.clip = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetClip = function(v) { return this.$val.SetClip(v); };
+	CSSStyleDeclaration.ptr.prototype.Color = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.color, $String);
+	};
+	CSSStyleDeclaration.prototype.Color = function() { return this.$val.Color(); };
+	CSSStyleDeclaration.ptr.prototype.SetColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.color = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColor = function(v) { return this.$val.SetColor(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnCount = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnCount, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnCount = function() { return this.$val.ColumnCount(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnCount = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnCount = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnCount = function(v) { return this.$val.SetColumnCount(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnFill = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnFill, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnFill = function() { return this.$val.ColumnFill(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnFill = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnFill = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnFill = function(v) { return this.$val.SetColumnFill(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnGap = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnGap, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnGap = function() { return this.$val.ColumnGap(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnGap = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnGap = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnGap = function(v) { return this.$val.SetColumnGap(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnRule = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnRule, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnRule = function() { return this.$val.ColumnRule(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnRule = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnRule = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnRule = function(v) { return this.$val.SetColumnRule(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnRuleColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnRuleColor, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnRuleColor = function() { return this.$val.ColumnRuleColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnRuleColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnRuleColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnRuleColor = function(v) { return this.$val.SetColumnRuleColor(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnRuleStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnRuleStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnRuleStyle = function() { return this.$val.ColumnRuleStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnRuleStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnRuleStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnRuleStyle = function(v) { return this.$val.SetColumnRuleStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnRuleWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnRuleWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnRuleWidth = function() { return this.$val.ColumnRuleWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnRuleWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnRuleWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnRuleWidth = function(v) { return this.$val.SetColumnRuleWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.Columns = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columns, $String);
+	};
+	CSSStyleDeclaration.prototype.Columns = function() { return this.$val.Columns(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumns = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columns = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumns = function(v) { return this.$val.SetColumns(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnSpan = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnSpan, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnSpan = function() { return this.$val.ColumnSpan(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnSpan = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnSpan = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnSpan = function(v) { return this.$val.SetColumnSpan(v); };
+	CSSStyleDeclaration.ptr.prototype.ColumnWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.columnWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.ColumnWidth = function() { return this.$val.ColumnWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetColumnWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.columnWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetColumnWidth = function(v) { return this.$val.SetColumnWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.CounterIncrement = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.counterIncrement, $String);
+	};
+	CSSStyleDeclaration.prototype.CounterIncrement = function() { return this.$val.CounterIncrement(); };
+	CSSStyleDeclaration.ptr.prototype.SetCounterIncrement = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.counterIncrement = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetCounterIncrement = function(v) { return this.$val.SetCounterIncrement(v); };
+	CSSStyleDeclaration.ptr.prototype.CounterReset = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.counterReset, $String);
+	};
+	CSSStyleDeclaration.prototype.CounterReset = function() { return this.$val.CounterReset(); };
+	CSSStyleDeclaration.ptr.prototype.SetCounterReset = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.counterReset = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetCounterReset = function(v) { return this.$val.SetCounterReset(v); };
+	CSSStyleDeclaration.ptr.prototype.Cursor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.cursor, $String);
+	};
+	CSSStyleDeclaration.prototype.Cursor = function() { return this.$val.Cursor(); };
+	CSSStyleDeclaration.ptr.prototype.SetCursor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.cursor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetCursor = function(v) { return this.$val.SetCursor(v); };
+	CSSStyleDeclaration.ptr.prototype.Direction = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.direction, $String);
+	};
+	CSSStyleDeclaration.prototype.Direction = function() { return this.$val.Direction(); };
+	CSSStyleDeclaration.ptr.prototype.SetDirection = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.direction = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetDirection = function(v) { return this.$val.SetDirection(v); };
+	CSSStyleDeclaration.ptr.prototype.Display = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.display, $String);
+	};
+	CSSStyleDeclaration.prototype.Display = function() { return this.$val.Display(); };
+	CSSStyleDeclaration.ptr.prototype.SetDisplay = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.display = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetDisplay = function(v) { return this.$val.SetDisplay(v); };
+	CSSStyleDeclaration.ptr.prototype.EmptyCells = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.emptyCells, $String);
+	};
+	CSSStyleDeclaration.prototype.EmptyCells = function() { return this.$val.EmptyCells(); };
+	CSSStyleDeclaration.ptr.prototype.SetEmptyCells = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.emptyCells = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetEmptyCells = function(v) { return this.$val.SetEmptyCells(v); };
+	CSSStyleDeclaration.ptr.prototype.Filter = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.filter, $String);
+	};
+	CSSStyleDeclaration.prototype.Filter = function() { return this.$val.Filter(); };
+	CSSStyleDeclaration.ptr.prototype.SetFilter = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.filter = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFilter = function(v) { return this.$val.SetFilter(v); };
+	CSSStyleDeclaration.ptr.prototype.Flex = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flex, $String);
+	};
+	CSSStyleDeclaration.prototype.Flex = function() { return this.$val.Flex(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlex = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flex = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlex = function(v) { return this.$val.SetFlex(v); };
+	CSSStyleDeclaration.ptr.prototype.FlexBasis = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flexBasis, $String);
+	};
+	CSSStyleDeclaration.prototype.FlexBasis = function() { return this.$val.FlexBasis(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlexBasis = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flexBasis = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlexBasis = function(v) { return this.$val.SetFlexBasis(v); };
+	CSSStyleDeclaration.ptr.prototype.FlexDirection = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flexDirection, $String);
+	};
+	CSSStyleDeclaration.prototype.FlexDirection = function() { return this.$val.FlexDirection(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlexDirection = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flexDirection = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlexDirection = function(v) { return this.$val.SetFlexDirection(v); };
+	CSSStyleDeclaration.ptr.prototype.FlexFlow = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flexFlow, $String);
+	};
+	CSSStyleDeclaration.prototype.FlexFlow = function() { return this.$val.FlexFlow(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlexFlow = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flexFlow = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlexFlow = function(v) { return this.$val.SetFlexFlow(v); };
+	CSSStyleDeclaration.ptr.prototype.FlexGrow = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flexGrow, $String);
+	};
+	CSSStyleDeclaration.prototype.FlexGrow = function() { return this.$val.FlexGrow(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlexGrow = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flexGrow = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlexGrow = function(v) { return this.$val.SetFlexGrow(v); };
+	CSSStyleDeclaration.ptr.prototype.FlexShrink = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flexShrink, $String);
+	};
+	CSSStyleDeclaration.prototype.FlexShrink = function() { return this.$val.FlexShrink(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlexShrink = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flexShrink = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlexShrink = function(v) { return this.$val.SetFlexShrink(v); };
+	CSSStyleDeclaration.ptr.prototype.FlexWrap = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.flexWrap, $String);
+	};
+	CSSStyleDeclaration.prototype.FlexWrap = function() { return this.$val.FlexWrap(); };
+	CSSStyleDeclaration.ptr.prototype.SetFlexWrap = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.flexWrap = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFlexWrap = function(v) { return this.$val.SetFlexWrap(v); };
+	CSSStyleDeclaration.ptr.prototype.CssFloat = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.cssFloat, $String);
+	};
+	CSSStyleDeclaration.prototype.CssFloat = function() { return this.$val.CssFloat(); };
+	CSSStyleDeclaration.ptr.prototype.SetCssFloat = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.cssFloat = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetCssFloat = function(v) { return this.$val.SetCssFloat(v); };
+	CSSStyleDeclaration.ptr.prototype.Font = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.font, $String);
+	};
+	CSSStyleDeclaration.prototype.Font = function() { return this.$val.Font(); };
+	CSSStyleDeclaration.ptr.prototype.SetFont = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.font = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFont = function(v) { return this.$val.SetFont(v); };
+	CSSStyleDeclaration.ptr.prototype.FontFamily = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.fontFamily, $String);
+	};
+	CSSStyleDeclaration.prototype.FontFamily = function() { return this.$val.FontFamily(); };
+	CSSStyleDeclaration.ptr.prototype.SetFontFamily = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.fontFamily = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFontFamily = function(v) { return this.$val.SetFontFamily(v); };
+	CSSStyleDeclaration.ptr.prototype.FontSize = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.fontSize, $String);
+	};
+	CSSStyleDeclaration.prototype.FontSize = function() { return this.$val.FontSize(); };
+	CSSStyleDeclaration.ptr.prototype.SetFontSize = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.fontSize = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFontSize = function(v) { return this.$val.SetFontSize(v); };
+	CSSStyleDeclaration.ptr.prototype.FontStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.fontStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.FontStyle = function() { return this.$val.FontStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetFontStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.fontStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFontStyle = function(v) { return this.$val.SetFontStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.FontVariant = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.fontVariant, $String);
+	};
+	CSSStyleDeclaration.prototype.FontVariant = function() { return this.$val.FontVariant(); };
+	CSSStyleDeclaration.ptr.prototype.SetFontVariant = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.fontVariant = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFontVariant = function(v) { return this.$val.SetFontVariant(v); };
+	CSSStyleDeclaration.ptr.prototype.FontWeight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.fontWeight, $String);
+	};
+	CSSStyleDeclaration.prototype.FontWeight = function() { return this.$val.FontWeight(); };
+	CSSStyleDeclaration.ptr.prototype.SetFontWeight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.fontWeight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFontWeight = function(v) { return this.$val.SetFontWeight(v); };
+	CSSStyleDeclaration.ptr.prototype.FontSizeAdjust = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.fontSizeAdjust, $String);
+	};
+	CSSStyleDeclaration.prototype.FontSizeAdjust = function() { return this.$val.FontSizeAdjust(); };
+	CSSStyleDeclaration.ptr.prototype.SetFontSizeAdjust = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.fontSizeAdjust = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetFontSizeAdjust = function(v) { return this.$val.SetFontSizeAdjust(v); };
+	CSSStyleDeclaration.ptr.prototype.Height = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.height, $String);
+	};
+	CSSStyleDeclaration.prototype.Height = function() { return this.$val.Height(); };
+	CSSStyleDeclaration.ptr.prototype.SetHeight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.height = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetHeight = function(v) { return this.$val.SetHeight(v); };
+	CSSStyleDeclaration.ptr.prototype.JustifyContent = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.justifyContent, $String);
+	};
+	CSSStyleDeclaration.prototype.JustifyContent = function() { return this.$val.JustifyContent(); };
+	CSSStyleDeclaration.ptr.prototype.SetJustifyContent = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.justifyContent = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetJustifyContent = function(v) { return this.$val.SetJustifyContent(v); };
 	CSSStyleDeclaration.ptr.prototype.Left = function() {
 		var $ptr, s;
 		s = this;
-		return $internalize(s.Object.cssText, $String);
+		return $internalize(s.Object.left, $String);
 	};
 	CSSStyleDeclaration.prototype.Left = function() { return this.$val.Left(); };
 	CSSStyleDeclaration.ptr.prototype.SetLeft = function(v) {
@@ -2395,6 +3544,150 @@ $packages["github.com/siongui/godom"] = (function() {
 		s.Object.left = $externalize(v, $String);
 	};
 	CSSStyleDeclaration.prototype.SetLeft = function(v) { return this.$val.SetLeft(v); };
+	CSSStyleDeclaration.ptr.prototype.LetterSpacing = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.letterSpacing, $String);
+	};
+	CSSStyleDeclaration.prototype.LetterSpacing = function() { return this.$val.LetterSpacing(); };
+	CSSStyleDeclaration.ptr.prototype.SetLetterSpacing = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.letterSpacing = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetLetterSpacing = function(v) { return this.$val.SetLetterSpacing(v); };
+	CSSStyleDeclaration.ptr.prototype.LineHeight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.lineHeight, $String);
+	};
+	CSSStyleDeclaration.prototype.LineHeight = function() { return this.$val.LineHeight(); };
+	CSSStyleDeclaration.ptr.prototype.SetLineHeight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.lineHeight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetLineHeight = function(v) { return this.$val.SetLineHeight(v); };
+	CSSStyleDeclaration.ptr.prototype.ListStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.listStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.ListStyle = function() { return this.$val.ListStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetListStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.listStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetListStyle = function(v) { return this.$val.SetListStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.ListStyleImage = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.listStyleImage, $String);
+	};
+	CSSStyleDeclaration.prototype.ListStyleImage = function() { return this.$val.ListStyleImage(); };
+	CSSStyleDeclaration.ptr.prototype.SetListStyleImage = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.listStyleImage = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetListStyleImage = function(v) { return this.$val.SetListStyleImage(v); };
+	CSSStyleDeclaration.ptr.prototype.ListStylePosition = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.listStylePosition, $String);
+	};
+	CSSStyleDeclaration.prototype.ListStylePosition = function() { return this.$val.ListStylePosition(); };
+	CSSStyleDeclaration.ptr.prototype.SetListStylePosition = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.listStylePosition = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetListStylePosition = function(v) { return this.$val.SetListStylePosition(v); };
+	CSSStyleDeclaration.ptr.prototype.ListStyleType = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.listStyleType, $String);
+	};
+	CSSStyleDeclaration.prototype.ListStyleType = function() { return this.$val.ListStyleType(); };
+	CSSStyleDeclaration.ptr.prototype.SetListStyleType = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.listStyleType = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetListStyleType = function(v) { return this.$val.SetListStyleType(v); };
+	CSSStyleDeclaration.ptr.prototype.Margin = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.margin, $String);
+	};
+	CSSStyleDeclaration.prototype.Margin = function() { return this.$val.Margin(); };
+	CSSStyleDeclaration.ptr.prototype.SetMargin = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.margin = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMargin = function(v) { return this.$val.SetMargin(v); };
+	CSSStyleDeclaration.ptr.prototype.MarginBottom = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.marginBottom, $String);
+	};
+	CSSStyleDeclaration.prototype.MarginBottom = function() { return this.$val.MarginBottom(); };
+	CSSStyleDeclaration.ptr.prototype.SetMarginBottom = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.marginBottom = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMarginBottom = function(v) { return this.$val.SetMarginBottom(v); };
+	CSSStyleDeclaration.ptr.prototype.MarginLeft = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.marginLeft, $String);
+	};
+	CSSStyleDeclaration.prototype.MarginLeft = function() { return this.$val.MarginLeft(); };
+	CSSStyleDeclaration.ptr.prototype.SetMarginLeft = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.marginLeft = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMarginLeft = function(v) { return this.$val.SetMarginLeft(v); };
+	CSSStyleDeclaration.ptr.prototype.MarginRight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.marginRight, $String);
+	};
+	CSSStyleDeclaration.prototype.MarginRight = function() { return this.$val.MarginRight(); };
+	CSSStyleDeclaration.ptr.prototype.SetMarginRight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.marginRight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMarginRight = function(v) { return this.$val.SetMarginRight(v); };
+	CSSStyleDeclaration.ptr.prototype.MarginTop = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.marginTop, $String);
+	};
+	CSSStyleDeclaration.prototype.MarginTop = function() { return this.$val.MarginTop(); };
+	CSSStyleDeclaration.ptr.prototype.SetMarginTop = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.marginTop = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMarginTop = function(v) { return this.$val.SetMarginTop(v); };
+	CSSStyleDeclaration.ptr.prototype.MaxHeight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.maxHeight, $String);
+	};
+	CSSStyleDeclaration.prototype.MaxHeight = function() { return this.$val.MaxHeight(); };
+	CSSStyleDeclaration.ptr.prototype.SetMaxHeight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.maxHeight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMaxHeight = function(v) { return this.$val.SetMaxHeight(v); };
 	CSSStyleDeclaration.ptr.prototype.MaxWidth = function() {
 		var $ptr, s;
 		s = this;
@@ -2407,6 +3700,18 @@ $packages["github.com/siongui/godom"] = (function() {
 		s.Object.maxWidth = $externalize(v, $String);
 	};
 	CSSStyleDeclaration.prototype.SetMaxWidth = function(v) { return this.$val.SetMaxWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.MinHeight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.minHeight, $String);
+	};
+	CSSStyleDeclaration.prototype.MinHeight = function() { return this.$val.MinHeight(); };
+	CSSStyleDeclaration.ptr.prototype.SetMinHeight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.minHeight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetMinHeight = function(v) { return this.$val.SetMinHeight(v); };
 	CSSStyleDeclaration.ptr.prototype.MinWidth = function() {
 		var $ptr, s;
 		s = this;
@@ -2419,6 +3724,696 @@ $packages["github.com/siongui/godom"] = (function() {
 		s.Object.minWidth = $externalize(v, $String);
 	};
 	CSSStyleDeclaration.prototype.SetMinWidth = function(v) { return this.$val.SetMinWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.Opacity = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.opacity, $String);
+	};
+	CSSStyleDeclaration.prototype.Opacity = function() { return this.$val.Opacity(); };
+	CSSStyleDeclaration.ptr.prototype.SetOpacity = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.opacity = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOpacity = function(v) { return this.$val.SetOpacity(v); };
+	CSSStyleDeclaration.ptr.prototype.Order = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.order, $String);
+	};
+	CSSStyleDeclaration.prototype.Order = function() { return this.$val.Order(); };
+	CSSStyleDeclaration.ptr.prototype.SetOrder = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.order = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOrder = function(v) { return this.$val.SetOrder(v); };
+	CSSStyleDeclaration.ptr.prototype.Orphans = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.orphans, $String);
+	};
+	CSSStyleDeclaration.prototype.Orphans = function() { return this.$val.Orphans(); };
+	CSSStyleDeclaration.ptr.prototype.SetOrphans = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.orphans = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOrphans = function(v) { return this.$val.SetOrphans(v); };
+	CSSStyleDeclaration.ptr.prototype.Outline = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.outline, $String);
+	};
+	CSSStyleDeclaration.prototype.Outline = function() { return this.$val.Outline(); };
+	CSSStyleDeclaration.ptr.prototype.SetOutline = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.outline = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOutline = function(v) { return this.$val.SetOutline(v); };
+	CSSStyleDeclaration.ptr.prototype.OutlineColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.outlineColor, $String);
+	};
+	CSSStyleDeclaration.prototype.OutlineColor = function() { return this.$val.OutlineColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetOutlineColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.outlineColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOutlineColor = function(v) { return this.$val.SetOutlineColor(v); };
+	CSSStyleDeclaration.ptr.prototype.OutlineOffset = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.outlineOffset, $String);
+	};
+	CSSStyleDeclaration.prototype.OutlineOffset = function() { return this.$val.OutlineOffset(); };
+	CSSStyleDeclaration.ptr.prototype.SetOutlineOffset = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.outlineOffset = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOutlineOffset = function(v) { return this.$val.SetOutlineOffset(v); };
+	CSSStyleDeclaration.ptr.prototype.OutlineStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.outlineStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.OutlineStyle = function() { return this.$val.OutlineStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetOutlineStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.outlineStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOutlineStyle = function(v) { return this.$val.SetOutlineStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.OutlineWidth = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.outlineWidth, $String);
+	};
+	CSSStyleDeclaration.prototype.OutlineWidth = function() { return this.$val.OutlineWidth(); };
+	CSSStyleDeclaration.ptr.prototype.SetOutlineWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.outlineWidth = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOutlineWidth = function(v) { return this.$val.SetOutlineWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.Overflow = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.overflow, $String);
+	};
+	CSSStyleDeclaration.prototype.Overflow = function() { return this.$val.Overflow(); };
+	CSSStyleDeclaration.ptr.prototype.SetOverflow = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.overflow = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOverflow = function(v) { return this.$val.SetOverflow(v); };
+	CSSStyleDeclaration.ptr.prototype.OverflowX = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.overflowX, $String);
+	};
+	CSSStyleDeclaration.prototype.OverflowX = function() { return this.$val.OverflowX(); };
+	CSSStyleDeclaration.ptr.prototype.SetOverflowX = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.overflowX = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOverflowX = function(v) { return this.$val.SetOverflowX(v); };
+	CSSStyleDeclaration.ptr.prototype.OverflowY = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.overflowY, $String);
+	};
+	CSSStyleDeclaration.prototype.OverflowY = function() { return this.$val.OverflowY(); };
+	CSSStyleDeclaration.ptr.prototype.SetOverflowY = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.overflowY = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetOverflowY = function(v) { return this.$val.SetOverflowY(v); };
+	CSSStyleDeclaration.ptr.prototype.Padding = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.padding, $String);
+	};
+	CSSStyleDeclaration.prototype.Padding = function() { return this.$val.Padding(); };
+	CSSStyleDeclaration.ptr.prototype.SetPadding = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.padding = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPadding = function(v) { return this.$val.SetPadding(v); };
+	CSSStyleDeclaration.ptr.prototype.PaddingBottom = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.paddingBottom, $String);
+	};
+	CSSStyleDeclaration.prototype.PaddingBottom = function() { return this.$val.PaddingBottom(); };
+	CSSStyleDeclaration.ptr.prototype.SetPaddingBottom = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.paddingBottom = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPaddingBottom = function(v) { return this.$val.SetPaddingBottom(v); };
+	CSSStyleDeclaration.ptr.prototype.PaddingLeft = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.paddingLeft, $String);
+	};
+	CSSStyleDeclaration.prototype.PaddingLeft = function() { return this.$val.PaddingLeft(); };
+	CSSStyleDeclaration.ptr.prototype.SetPaddingLeft = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.paddingLeft = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPaddingLeft = function(v) { return this.$val.SetPaddingLeft(v); };
+	CSSStyleDeclaration.ptr.prototype.PaddingRight = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.paddingRight, $String);
+	};
+	CSSStyleDeclaration.prototype.PaddingRight = function() { return this.$val.PaddingRight(); };
+	CSSStyleDeclaration.ptr.prototype.SetPaddingRight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.paddingRight = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPaddingRight = function(v) { return this.$val.SetPaddingRight(v); };
+	CSSStyleDeclaration.ptr.prototype.PaddingTop = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.paddingTop, $String);
+	};
+	CSSStyleDeclaration.prototype.PaddingTop = function() { return this.$val.PaddingTop(); };
+	CSSStyleDeclaration.ptr.prototype.SetPaddingTop = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.paddingTop = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPaddingTop = function(v) { return this.$val.SetPaddingTop(v); };
+	CSSStyleDeclaration.ptr.prototype.PageBreakAfter = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.pageBreakAfter, $String);
+	};
+	CSSStyleDeclaration.prototype.PageBreakAfter = function() { return this.$val.PageBreakAfter(); };
+	CSSStyleDeclaration.ptr.prototype.SetPageBreakAfter = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.pageBreakAfter = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPageBreakAfter = function(v) { return this.$val.SetPageBreakAfter(v); };
+	CSSStyleDeclaration.ptr.prototype.PageBreakBefore = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.pageBreakBefore, $String);
+	};
+	CSSStyleDeclaration.prototype.PageBreakBefore = function() { return this.$val.PageBreakBefore(); };
+	CSSStyleDeclaration.ptr.prototype.SetPageBreakBefore = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.pageBreakBefore = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPageBreakBefore = function(v) { return this.$val.SetPageBreakBefore(v); };
+	CSSStyleDeclaration.ptr.prototype.PageBreakInside = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.pageBreakInside, $String);
+	};
+	CSSStyleDeclaration.prototype.PageBreakInside = function() { return this.$val.PageBreakInside(); };
+	CSSStyleDeclaration.ptr.prototype.SetPageBreakInside = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.pageBreakInside = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPageBreakInside = function(v) { return this.$val.SetPageBreakInside(v); };
+	CSSStyleDeclaration.ptr.prototype.Perspective = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.perspective, $String);
+	};
+	CSSStyleDeclaration.prototype.Perspective = function() { return this.$val.Perspective(); };
+	CSSStyleDeclaration.ptr.prototype.SetPerspective = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.perspective = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPerspective = function(v) { return this.$val.SetPerspective(v); };
+	CSSStyleDeclaration.ptr.prototype.PerspectiveOrigin = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.perspectiveOrigin, $String);
+	};
+	CSSStyleDeclaration.prototype.PerspectiveOrigin = function() { return this.$val.PerspectiveOrigin(); };
+	CSSStyleDeclaration.ptr.prototype.SetPerspectiveOrigin = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.perspectiveOrigin = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPerspectiveOrigin = function(v) { return this.$val.SetPerspectiveOrigin(v); };
+	CSSStyleDeclaration.ptr.prototype.Position = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.position, $String);
+	};
+	CSSStyleDeclaration.prototype.Position = function() { return this.$val.Position(); };
+	CSSStyleDeclaration.ptr.prototype.SetPosition = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.position = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetPosition = function(v) { return this.$val.SetPosition(v); };
+	CSSStyleDeclaration.ptr.prototype.Quotes = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.quotes, $String);
+	};
+	CSSStyleDeclaration.prototype.Quotes = function() { return this.$val.Quotes(); };
+	CSSStyleDeclaration.ptr.prototype.SetQuotes = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.quotes = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetQuotes = function(v) { return this.$val.SetQuotes(v); };
+	CSSStyleDeclaration.ptr.prototype.Resize = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.resize, $String);
+	};
+	CSSStyleDeclaration.prototype.Resize = function() { return this.$val.Resize(); };
+	CSSStyleDeclaration.ptr.prototype.SetResize = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.resize = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetResize = function(v) { return this.$val.SetResize(v); };
+	CSSStyleDeclaration.ptr.prototype.Right = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.right, $String);
+	};
+	CSSStyleDeclaration.prototype.Right = function() { return this.$val.Right(); };
+	CSSStyleDeclaration.ptr.prototype.SetRight = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.right = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetRight = function(v) { return this.$val.SetRight(v); };
+	CSSStyleDeclaration.ptr.prototype.TableLayout = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.tableLayout, $String);
+	};
+	CSSStyleDeclaration.prototype.TableLayout = function() { return this.$val.TableLayout(); };
+	CSSStyleDeclaration.ptr.prototype.SetTableLayout = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.tableLayout = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTableLayout = function(v) { return this.$val.SetTableLayout(v); };
+	CSSStyleDeclaration.ptr.prototype.TabSize = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.tabSize, $String);
+	};
+	CSSStyleDeclaration.prototype.TabSize = function() { return this.$val.TabSize(); };
+	CSSStyleDeclaration.ptr.prototype.SetTabSize = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.tabSize = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTabSize = function(v) { return this.$val.SetTabSize(v); };
+	CSSStyleDeclaration.ptr.prototype.TextAlign = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textAlign, $String);
+	};
+	CSSStyleDeclaration.prototype.TextAlign = function() { return this.$val.TextAlign(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextAlign = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textAlign = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextAlign = function(v) { return this.$val.SetTextAlign(v); };
+	CSSStyleDeclaration.ptr.prototype.TextAlignLast = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textAlignLast, $String);
+	};
+	CSSStyleDeclaration.prototype.TextAlignLast = function() { return this.$val.TextAlignLast(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextAlignLast = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textAlignLast = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextAlignLast = function(v) { return this.$val.SetTextAlignLast(v); };
+	CSSStyleDeclaration.ptr.prototype.TextDecoration = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textDecoration, $String);
+	};
+	CSSStyleDeclaration.prototype.TextDecoration = function() { return this.$val.TextDecoration(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextDecoration = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textDecoration = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextDecoration = function(v) { return this.$val.SetTextDecoration(v); };
+	CSSStyleDeclaration.ptr.prototype.TextDecorationColor = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textDecorationColor, $String);
+	};
+	CSSStyleDeclaration.prototype.TextDecorationColor = function() { return this.$val.TextDecorationColor(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextDecorationColor = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textDecorationColor = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextDecorationColor = function(v) { return this.$val.SetTextDecorationColor(v); };
+	CSSStyleDeclaration.ptr.prototype.TextDecorationLine = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textDecorationLine, $String);
+	};
+	CSSStyleDeclaration.prototype.TextDecorationLine = function() { return this.$val.TextDecorationLine(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextDecorationLine = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textDecorationLine = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextDecorationLine = function(v) { return this.$val.SetTextDecorationLine(v); };
+	CSSStyleDeclaration.ptr.prototype.TextDecorationStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textDecorationStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.TextDecorationStyle = function() { return this.$val.TextDecorationStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextDecorationStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textDecorationStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextDecorationStyle = function(v) { return this.$val.SetTextDecorationStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.TextIndent = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textIndent, $String);
+	};
+	CSSStyleDeclaration.prototype.TextIndent = function() { return this.$val.TextIndent(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextIndent = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textIndent = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextIndent = function(v) { return this.$val.SetTextIndent(v); };
+	CSSStyleDeclaration.ptr.prototype.TextOverflow = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textOverflow, $String);
+	};
+	CSSStyleDeclaration.prototype.TextOverflow = function() { return this.$val.TextOverflow(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextOverflow = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textOverflow = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextOverflow = function(v) { return this.$val.SetTextOverflow(v); };
+	CSSStyleDeclaration.ptr.prototype.TextShadow = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textShadow, $String);
+	};
+	CSSStyleDeclaration.prototype.TextShadow = function() { return this.$val.TextShadow(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextShadow = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textShadow = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextShadow = function(v) { return this.$val.SetTextShadow(v); };
+	CSSStyleDeclaration.ptr.prototype.TextTransform = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.textTransform, $String);
+	};
+	CSSStyleDeclaration.prototype.TextTransform = function() { return this.$val.TextTransform(); };
+	CSSStyleDeclaration.ptr.prototype.SetTextTransform = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.textTransform = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTextTransform = function(v) { return this.$val.SetTextTransform(v); };
+	CSSStyleDeclaration.ptr.prototype.Top = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.top, $String);
+	};
+	CSSStyleDeclaration.prototype.Top = function() { return this.$val.Top(); };
+	CSSStyleDeclaration.ptr.prototype.SetTop = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.top = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTop = function(v) { return this.$val.SetTop(v); };
+	CSSStyleDeclaration.ptr.prototype.Transform = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transform, $String);
+	};
+	CSSStyleDeclaration.prototype.Transform = function() { return this.$val.Transform(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransform = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transform = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransform = function(v) { return this.$val.SetTransform(v); };
+	CSSStyleDeclaration.ptr.prototype.TransformOrigin = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transformOrigin, $String);
+	};
+	CSSStyleDeclaration.prototype.TransformOrigin = function() { return this.$val.TransformOrigin(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransformOrigin = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transformOrigin = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransformOrigin = function(v) { return this.$val.SetTransformOrigin(v); };
+	CSSStyleDeclaration.ptr.prototype.TransformStyle = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transformStyle, $String);
+	};
+	CSSStyleDeclaration.prototype.TransformStyle = function() { return this.$val.TransformStyle(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransformStyle = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transformStyle = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransformStyle = function(v) { return this.$val.SetTransformStyle(v); };
+	CSSStyleDeclaration.ptr.prototype.Transition = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transition, $String);
+	};
+	CSSStyleDeclaration.prototype.Transition = function() { return this.$val.Transition(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransition = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transition = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransition = function(v) { return this.$val.SetTransition(v); };
+	CSSStyleDeclaration.ptr.prototype.TransitionProperty = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transitionProperty, $String);
+	};
+	CSSStyleDeclaration.prototype.TransitionProperty = function() { return this.$val.TransitionProperty(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransitionProperty = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transitionProperty = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransitionProperty = function(v) { return this.$val.SetTransitionProperty(v); };
+	CSSStyleDeclaration.ptr.prototype.TransitionDuration = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transitionDuration, $String);
+	};
+	CSSStyleDeclaration.prototype.TransitionDuration = function() { return this.$val.TransitionDuration(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransitionDuration = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transitionDuration = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransitionDuration = function(v) { return this.$val.SetTransitionDuration(v); };
+	CSSStyleDeclaration.ptr.prototype.TransitionTimingFunction = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transitionTimingFunction, $String);
+	};
+	CSSStyleDeclaration.prototype.TransitionTimingFunction = function() { return this.$val.TransitionTimingFunction(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransitionTimingFunction = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transitionTimingFunction = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransitionTimingFunction = function(v) { return this.$val.SetTransitionTimingFunction(v); };
+	CSSStyleDeclaration.ptr.prototype.TransitionDelay = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.transitionDelay, $String);
+	};
+	CSSStyleDeclaration.prototype.TransitionDelay = function() { return this.$val.TransitionDelay(); };
+	CSSStyleDeclaration.ptr.prototype.SetTransitionDelay = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.transitionDelay = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetTransitionDelay = function(v) { return this.$val.SetTransitionDelay(v); };
+	CSSStyleDeclaration.ptr.prototype.UnicodeBidi = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.unicodeBidi, $String);
+	};
+	CSSStyleDeclaration.prototype.UnicodeBidi = function() { return this.$val.UnicodeBidi(); };
+	CSSStyleDeclaration.ptr.prototype.SetUnicodeBidi = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.unicodeBidi = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetUnicodeBidi = function(v) { return this.$val.SetUnicodeBidi(v); };
+	CSSStyleDeclaration.ptr.prototype.UserSelect = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.userSelect, $String);
+	};
+	CSSStyleDeclaration.prototype.UserSelect = function() { return this.$val.UserSelect(); };
+	CSSStyleDeclaration.ptr.prototype.SetUserSelect = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.userSelect = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetUserSelect = function(v) { return this.$val.SetUserSelect(v); };
+	CSSStyleDeclaration.ptr.prototype.VerticalAlign = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.verticalAlign, $String);
+	};
+	CSSStyleDeclaration.prototype.VerticalAlign = function() { return this.$val.VerticalAlign(); };
+	CSSStyleDeclaration.ptr.prototype.SetVerticalAlign = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.verticalAlign = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetVerticalAlign = function(v) { return this.$val.SetVerticalAlign(v); };
+	CSSStyleDeclaration.ptr.prototype.Visibility = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.visibility, $String);
+	};
+	CSSStyleDeclaration.prototype.Visibility = function() { return this.$val.Visibility(); };
+	CSSStyleDeclaration.ptr.prototype.SetVisibility = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.visibility = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetVisibility = function(v) { return this.$val.SetVisibility(v); };
+	CSSStyleDeclaration.ptr.prototype.WhiteSpace = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.whiteSpace, $String);
+	};
+	CSSStyleDeclaration.prototype.WhiteSpace = function() { return this.$val.WhiteSpace(); };
+	CSSStyleDeclaration.ptr.prototype.SetWhiteSpace = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.whiteSpace = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetWhiteSpace = function(v) { return this.$val.SetWhiteSpace(v); };
+	CSSStyleDeclaration.ptr.prototype.Width = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.width, $String);
+	};
+	CSSStyleDeclaration.prototype.Width = function() { return this.$val.Width(); };
+	CSSStyleDeclaration.ptr.prototype.SetWidth = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.width = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetWidth = function(v) { return this.$val.SetWidth(v); };
+	CSSStyleDeclaration.ptr.prototype.WordBreak = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.wordBreak, $String);
+	};
+	CSSStyleDeclaration.prototype.WordBreak = function() { return this.$val.WordBreak(); };
+	CSSStyleDeclaration.ptr.prototype.SetWordBreak = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.wordBreak = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetWordBreak = function(v) { return this.$val.SetWordBreak(v); };
+	CSSStyleDeclaration.ptr.prototype.WordSpacing = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.wordSpacing, $String);
+	};
+	CSSStyleDeclaration.prototype.WordSpacing = function() { return this.$val.WordSpacing(); };
+	CSSStyleDeclaration.ptr.prototype.SetWordSpacing = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.wordSpacing = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetWordSpacing = function(v) { return this.$val.SetWordSpacing(v); };
+	CSSStyleDeclaration.ptr.prototype.WordWrap = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.wordWrap, $String);
+	};
+	CSSStyleDeclaration.prototype.WordWrap = function() { return this.$val.WordWrap(); };
+	CSSStyleDeclaration.ptr.prototype.SetWordWrap = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.wordWrap = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetWordWrap = function(v) { return this.$val.SetWordWrap(v); };
+	CSSStyleDeclaration.ptr.prototype.Widows = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.widows, $String);
+	};
+	CSSStyleDeclaration.prototype.Widows = function() { return this.$val.Widows(); };
+	CSSStyleDeclaration.ptr.prototype.SetWidows = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.widows = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetWidows = function(v) { return this.$val.SetWidows(v); };
+	CSSStyleDeclaration.ptr.prototype.ZIndex = function() {
+		var $ptr, s;
+		s = this;
+		return $internalize(s.Object.zIndex, $String);
+	};
+	CSSStyleDeclaration.prototype.ZIndex = function() { return this.$val.ZIndex(); };
+	CSSStyleDeclaration.ptr.prototype.SetZIndex = function(v) {
+		var $ptr, s, v;
+		s = this;
+		s.Object.zIndex = $externalize(v, $String);
+	};
+	CSSStyleDeclaration.prototype.SetZIndex = function(v) { return this.$val.SetZIndex(v); };
+	Object.ptr.prototype.ActiveElement = function() {
+		var $ptr, o;
+		o = this;
+		return new Object.ptr(o.Object.activeElement);
+	};
+	Object.prototype.ActiveElement = function() { return this.$val.ActiveElement(); };
 	Object.ptr.prototype.CreateElement = function(tag) {
 		var $ptr, o, tag;
 		o = this;
@@ -2503,6 +4498,24 @@ $packages["github.com/siongui/godom"] = (function() {
 		o.Object.innerHTML = $externalize(html, $String);
 	};
 	Object.prototype.SetInnerHTML = function(html) { return this.$val.SetInnerHTML(html); };
+	Object.ptr.prototype.OuterHTML = function() {
+		var $ptr, o;
+		o = this;
+		return $internalize(o.Object.outerHTML, $String);
+	};
+	Object.prototype.OuterHTML = function() { return this.$val.OuterHTML(); };
+	Object.ptr.prototype.SetOuterHTML = function(html) {
+		var $ptr, html, o;
+		o = this;
+		o.Object.outerHTML = $externalize(html, $String);
+	};
+	Object.prototype.SetOuterHTML = function(html) { return this.$val.SetOuterHTML(html); };
+	Object.ptr.prototype.Blur = function() {
+		var $ptr, o;
+		o = this;
+		o.Object.blur();
+	};
+	Object.prototype.Blur = function() { return this.$val.Blur(); };
 	Object.ptr.prototype.Focus = function() {
 		var $ptr, o;
 		o = this;
@@ -2583,6 +4596,12 @@ $packages["github.com/siongui/godom"] = (function() {
 		o.ParentNode().InsertBefore(n, o.NextSibling());
 	};
 	Object.prototype.AppendAfter = function(n) { return this.$val.AppendAfter(n); };
+	Object.ptr.prototype.IsFocused = function() {
+		var $ptr, o;
+		o = this;
+		return o.IsEqualNode($pkg.Document.ActiveElement());
+	};
+	Object.prototype.IsFocused = function() { return this.$val.IsFocused(); };
 	Object.ptr.prototype.Style = function() {
 		var $ptr, o;
 		o = this;
@@ -2667,6 +4686,18 @@ $packages["github.com/siongui/godom"] = (function() {
 		return new Object.ptr(o.Object.insertBefore($externalize(newNode, ptrType), $externalize(referenceNode, ptrType)));
 	};
 	Object.prototype.InsertBefore = function(newNode, referenceNode) { return this.$val.InsertBefore(newNode, referenceNode); };
+	Object.ptr.prototype.IsEqualNode = function(n) {
+		var $ptr, n, o;
+		o = this;
+		return !!(o.Object.isEqualNode($externalize(n, ptrType)));
+	};
+	Object.prototype.IsEqualNode = function(n) { return this.$val.IsEqualNode(n); };
+	Object.ptr.prototype.IsSameNode = function(n) {
+		var $ptr, n, o;
+		o = this;
+		return !!(o.Object.isSameNode($externalize(n, ptrType)));
+	};
+	Object.prototype.IsSameNode = function(n) { return this.$val.IsSameNode(n); };
 	Object.ptr.prototype.RemoveChild = function(c) {
 		var $ptr, c, o;
 		o = this;
@@ -2703,8 +4734,8 @@ $packages["github.com/siongui/godom"] = (function() {
 		t.Object.toggle($externalize(s, $String));
 	};
 	DOMTokenList.prototype.Toggle = function(s) { return this.$val.Toggle(s); };
-	ptrType$1.methods = [{prop: "CssText", name: "CssText", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Left", name: "Left", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetLeft", name: "SetLeft", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MaxWidth", name: "MaxWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMaxWidth", name: "SetMaxWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MinWidth", name: "MinWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMinWidth", name: "SetMinWidth", pkg: "", typ: $funcType([$String], [], false)}];
-	ptrType.methods = [{prop: "CreateElement", name: "CreateElement", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "CreateTextNode", name: "CreateTextNode", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "GetElementById", name: "GetElementById", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "ClassList", name: "ClassList", pkg: "", typ: $funcType([], [ptrType$3], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ptrType$4], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, funcType, sliceType$1], [], true)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, funcType, sliceType$1], [], true)}, {prop: "RemoveAllChildNodes", name: "RemoveAllChildNodes", pkg: "", typ: $funcType([], [], false)}, {prop: "AppendBefore", name: "AppendBefore", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "AppendAfter", name: "AppendAfter", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "Style", name: "Style", pkg: "", typ: $funcType([], [ptrType$1], false)}, {prop: "Value", name: "Value", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetValue", name: "SetValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([ptrType, ptrType], [ptrType], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([ptrType], [ptrType], false)}];
+	ptrType$1.methods = [{prop: "CssText", name: "CssText", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "AlignContent", name: "AlignContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAlignContent", name: "SetAlignContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AlignItems", name: "AlignItems", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAlignItems", name: "SetAlignItems", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AlignSelf", name: "AlignSelf", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAlignSelf", name: "SetAlignSelf", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Animation", name: "Animation", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimation", name: "SetAnimation", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationDelay", name: "AnimationDelay", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationDelay", name: "SetAnimationDelay", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationDirection", name: "AnimationDirection", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationDirection", name: "SetAnimationDirection", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationDuration", name: "AnimationDuration", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationDuration", name: "SetAnimationDuration", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationFillMode", name: "AnimationFillMode", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationFillMode", name: "SetAnimationFillMode", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationIterationCount", name: "AnimationIterationCount", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationIterationCount", name: "SetAnimationIterationCount", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationName", name: "AnimationName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationName", name: "SetAnimationName", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationTimingFunction", name: "AnimationTimingFunction", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationTimingFunction", name: "SetAnimationTimingFunction", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AnimationPlayState", name: "AnimationPlayState", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAnimationPlayState", name: "SetAnimationPlayState", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Background", name: "Background", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackground", name: "SetBackground", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundAttachment", name: "BackgroundAttachment", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundAttachment", name: "SetBackgroundAttachment", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundColor", name: "BackgroundColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundColor", name: "SetBackgroundColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundImage", name: "BackgroundImage", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundImage", name: "SetBackgroundImage", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundPosition", name: "BackgroundPosition", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundPosition", name: "SetBackgroundPosition", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundRepeat", name: "BackgroundRepeat", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundRepeat", name: "SetBackgroundRepeat", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundClip", name: "BackgroundClip", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundClip", name: "SetBackgroundClip", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundOrigin", name: "BackgroundOrigin", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundOrigin", name: "SetBackgroundOrigin", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackgroundSize", name: "BackgroundSize", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackgroundSize", name: "SetBackgroundSize", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BackfaceVisibility", name: "BackfaceVisibility", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBackfaceVisibility", name: "SetBackfaceVisibility", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Border", name: "Border", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorder", name: "SetBorder", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderBottom", name: "BorderBottom", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderBottom", name: "SetBorderBottom", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderBottomColor", name: "BorderBottomColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderBottomColor", name: "SetBorderBottomColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderBottomLeftRadius", name: "BorderBottomLeftRadius", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderBottomLeftRadius", name: "SetBorderBottomLeftRadius", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderBottomRightRadius", name: "BorderBottomRightRadius", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderBottomRightRadius", name: "SetBorderBottomRightRadius", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderBottomStyle", name: "BorderBottomStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderBottomStyle", name: "SetBorderBottomStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderBottomWidth", name: "BorderBottomWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderBottomWidth", name: "SetBorderBottomWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderCollapse", name: "BorderCollapse", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderCollapse", name: "SetBorderCollapse", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderColor", name: "BorderColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderColor", name: "SetBorderColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderImage", name: "BorderImage", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderImage", name: "SetBorderImage", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderImageOutset", name: "BorderImageOutset", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderImageOutset", name: "SetBorderImageOutset", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderImageRepeat", name: "BorderImageRepeat", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderImageRepeat", name: "SetBorderImageRepeat", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderImageSlice", name: "BorderImageSlice", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderImageSlice", name: "SetBorderImageSlice", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderImageSource", name: "BorderImageSource", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderImageSource", name: "SetBorderImageSource", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderImageWidth", name: "BorderImageWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderImageWidth", name: "SetBorderImageWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderLeft", name: "BorderLeft", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderLeft", name: "SetBorderLeft", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderLeftColor", name: "BorderLeftColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderLeftColor", name: "SetBorderLeftColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderLeftStyle", name: "BorderLeftStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderLeftStyle", name: "SetBorderLeftStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderLeftWidth", name: "BorderLeftWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderLeftWidth", name: "SetBorderLeftWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderRadius", name: "BorderRadius", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderRadius", name: "SetBorderRadius", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderRight", name: "BorderRight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderRight", name: "SetBorderRight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderRightColor", name: "BorderRightColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderRightColor", name: "SetBorderRightColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderRightStyle", name: "BorderRightStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderRightStyle", name: "SetBorderRightStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderRightWidth", name: "BorderRightWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderRightWidth", name: "SetBorderRightWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderSpacing", name: "BorderSpacing", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderSpacing", name: "SetBorderSpacing", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderStyle", name: "BorderStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderStyle", name: "SetBorderStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderTop", name: "BorderTop", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderTop", name: "SetBorderTop", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderTopColor", name: "BorderTopColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderTopColor", name: "SetBorderTopColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderTopLeftRadius", name: "BorderTopLeftRadius", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderTopLeftRadius", name: "SetBorderTopLeftRadius", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderTopRightRadius", name: "BorderTopRightRadius", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderTopRightRadius", name: "SetBorderTopRightRadius", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderTopStyle", name: "BorderTopStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderTopStyle", name: "SetBorderTopStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderTopWidth", name: "BorderTopWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderTopWidth", name: "SetBorderTopWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BorderWidth", name: "BorderWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBorderWidth", name: "SetBorderWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Bottom", name: "Bottom", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBottom", name: "SetBottom", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BoxShadow", name: "BoxShadow", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBoxShadow", name: "SetBoxShadow", pkg: "", typ: $funcType([$String], [], false)}, {prop: "BoxSizing", name: "BoxSizing", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetBoxSizing", name: "SetBoxSizing", pkg: "", typ: $funcType([$String], [], false)}, {prop: "CaptionSide", name: "CaptionSide", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCaptionSide", name: "SetCaptionSide", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Clear", name: "Clear", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetClear", name: "SetClear", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Clip", name: "Clip", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetClip", name: "SetClip", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Color", name: "Color", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColor", name: "SetColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnCount", name: "ColumnCount", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnCount", name: "SetColumnCount", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnFill", name: "ColumnFill", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnFill", name: "SetColumnFill", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnGap", name: "ColumnGap", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnGap", name: "SetColumnGap", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnRule", name: "ColumnRule", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnRule", name: "SetColumnRule", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnRuleColor", name: "ColumnRuleColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnRuleColor", name: "SetColumnRuleColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnRuleStyle", name: "ColumnRuleStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnRuleStyle", name: "SetColumnRuleStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnRuleWidth", name: "ColumnRuleWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnRuleWidth", name: "SetColumnRuleWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Columns", name: "Columns", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumns", name: "SetColumns", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnSpan", name: "ColumnSpan", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnSpan", name: "SetColumnSpan", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ColumnWidth", name: "ColumnWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetColumnWidth", name: "SetColumnWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "CounterIncrement", name: "CounterIncrement", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCounterIncrement", name: "SetCounterIncrement", pkg: "", typ: $funcType([$String], [], false)}, {prop: "CounterReset", name: "CounterReset", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCounterReset", name: "SetCounterReset", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Cursor", name: "Cursor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Direction", name: "Direction", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetDirection", name: "SetDirection", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Display", name: "Display", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetDisplay", name: "SetDisplay", pkg: "", typ: $funcType([$String], [], false)}, {prop: "EmptyCells", name: "EmptyCells", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetEmptyCells", name: "SetEmptyCells", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Filter", name: "Filter", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFilter", name: "SetFilter", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Flex", name: "Flex", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlex", name: "SetFlex", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FlexBasis", name: "FlexBasis", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlexBasis", name: "SetFlexBasis", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FlexDirection", name: "FlexDirection", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlexDirection", name: "SetFlexDirection", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FlexFlow", name: "FlexFlow", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlexFlow", name: "SetFlexFlow", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FlexGrow", name: "FlexGrow", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlexGrow", name: "SetFlexGrow", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FlexShrink", name: "FlexShrink", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlexShrink", name: "SetFlexShrink", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FlexWrap", name: "FlexWrap", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFlexWrap", name: "SetFlexWrap", pkg: "", typ: $funcType([$String], [], false)}, {prop: "CssFloat", name: "CssFloat", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCssFloat", name: "SetCssFloat", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Font", name: "Font", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFont", name: "SetFont", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FontFamily", name: "FontFamily", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFontFamily", name: "SetFontFamily", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FontSize", name: "FontSize", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFontSize", name: "SetFontSize", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FontStyle", name: "FontStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFontStyle", name: "SetFontStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FontVariant", name: "FontVariant", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFontVariant", name: "SetFontVariant", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FontWeight", name: "FontWeight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFontWeight", name: "SetFontWeight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FontSizeAdjust", name: "FontSizeAdjust", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetFontSizeAdjust", name: "SetFontSizeAdjust", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Height", name: "Height", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetHeight", name: "SetHeight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "JustifyContent", name: "JustifyContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetJustifyContent", name: "SetJustifyContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Left", name: "Left", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetLeft", name: "SetLeft", pkg: "", typ: $funcType([$String], [], false)}, {prop: "LetterSpacing", name: "LetterSpacing", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetLetterSpacing", name: "SetLetterSpacing", pkg: "", typ: $funcType([$String], [], false)}, {prop: "LineHeight", name: "LineHeight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetLineHeight", name: "SetLineHeight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ListStyle", name: "ListStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetListStyle", name: "SetListStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ListStyleImage", name: "ListStyleImage", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetListStyleImage", name: "SetListStyleImage", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ListStylePosition", name: "ListStylePosition", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetListStylePosition", name: "SetListStylePosition", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ListStyleType", name: "ListStyleType", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetListStyleType", name: "SetListStyleType", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Margin", name: "Margin", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMargin", name: "SetMargin", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MarginBottom", name: "MarginBottom", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMarginBottom", name: "SetMarginBottom", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MarginLeft", name: "MarginLeft", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMarginLeft", name: "SetMarginLeft", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MarginRight", name: "MarginRight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMarginRight", name: "SetMarginRight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MarginTop", name: "MarginTop", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMarginTop", name: "SetMarginTop", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MaxHeight", name: "MaxHeight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMaxHeight", name: "SetMaxHeight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MaxWidth", name: "MaxWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMaxWidth", name: "SetMaxWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MinHeight", name: "MinHeight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMinHeight", name: "SetMinHeight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "MinWidth", name: "MinWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetMinWidth", name: "SetMinWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Opacity", name: "Opacity", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOpacity", name: "SetOpacity", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Order", name: "Order", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOrder", name: "SetOrder", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Orphans", name: "Orphans", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOrphans", name: "SetOrphans", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Outline", name: "Outline", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOutline", name: "SetOutline", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OutlineColor", name: "OutlineColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOutlineColor", name: "SetOutlineColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OutlineOffset", name: "OutlineOffset", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOutlineOffset", name: "SetOutlineOffset", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OutlineStyle", name: "OutlineStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOutlineStyle", name: "SetOutlineStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OutlineWidth", name: "OutlineWidth", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOutlineWidth", name: "SetOutlineWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Overflow", name: "Overflow", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOverflow", name: "SetOverflow", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OverflowX", name: "OverflowX", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOverflowX", name: "SetOverflowX", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OverflowY", name: "OverflowY", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOverflowY", name: "SetOverflowY", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Padding", name: "Padding", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPadding", name: "SetPadding", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PaddingBottom", name: "PaddingBottom", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPaddingBottom", name: "SetPaddingBottom", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PaddingLeft", name: "PaddingLeft", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPaddingLeft", name: "SetPaddingLeft", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PaddingRight", name: "PaddingRight", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPaddingRight", name: "SetPaddingRight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PaddingTop", name: "PaddingTop", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPaddingTop", name: "SetPaddingTop", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PageBreakAfter", name: "PageBreakAfter", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPageBreakAfter", name: "SetPageBreakAfter", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PageBreakBefore", name: "PageBreakBefore", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPageBreakBefore", name: "SetPageBreakBefore", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PageBreakInside", name: "PageBreakInside", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPageBreakInside", name: "SetPageBreakInside", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Perspective", name: "Perspective", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPerspective", name: "SetPerspective", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PerspectiveOrigin", name: "PerspectiveOrigin", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPerspectiveOrigin", name: "SetPerspectiveOrigin", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Position", name: "Position", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetPosition", name: "SetPosition", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Quotes", name: "Quotes", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetQuotes", name: "SetQuotes", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Resize", name: "Resize", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetResize", name: "SetResize", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Right", name: "Right", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetRight", name: "SetRight", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TableLayout", name: "TableLayout", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTableLayout", name: "SetTableLayout", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TabSize", name: "TabSize", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTabSize", name: "SetTabSize", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextAlign", name: "TextAlign", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextAlign", name: "SetTextAlign", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextAlignLast", name: "TextAlignLast", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextAlignLast", name: "SetTextAlignLast", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextDecoration", name: "TextDecoration", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextDecoration", name: "SetTextDecoration", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextDecorationColor", name: "TextDecorationColor", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextDecorationColor", name: "SetTextDecorationColor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextDecorationLine", name: "TextDecorationLine", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextDecorationLine", name: "SetTextDecorationLine", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextDecorationStyle", name: "TextDecorationStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextDecorationStyle", name: "SetTextDecorationStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextIndent", name: "TextIndent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextIndent", name: "SetTextIndent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextOverflow", name: "TextOverflow", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextOverflow", name: "SetTextOverflow", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextShadow", name: "TextShadow", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextShadow", name: "SetTextShadow", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextTransform", name: "TextTransform", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextTransform", name: "SetTextTransform", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Top", name: "Top", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTop", name: "SetTop", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Transform", name: "Transform", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransform", name: "SetTransform", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TransformOrigin", name: "TransformOrigin", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransformOrigin", name: "SetTransformOrigin", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TransformStyle", name: "TransformStyle", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransformStyle", name: "SetTransformStyle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Transition", name: "Transition", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransition", name: "SetTransition", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TransitionProperty", name: "TransitionProperty", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransitionProperty", name: "SetTransitionProperty", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TransitionDuration", name: "TransitionDuration", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransitionDuration", name: "SetTransitionDuration", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TransitionTimingFunction", name: "TransitionTimingFunction", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransitionTimingFunction", name: "SetTransitionTimingFunction", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TransitionDelay", name: "TransitionDelay", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTransitionDelay", name: "SetTransitionDelay", pkg: "", typ: $funcType([$String], [], false)}, {prop: "UnicodeBidi", name: "UnicodeBidi", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetUnicodeBidi", name: "SetUnicodeBidi", pkg: "", typ: $funcType([$String], [], false)}, {prop: "UserSelect", name: "UserSelect", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetUserSelect", name: "SetUserSelect", pkg: "", typ: $funcType([$String], [], false)}, {prop: "VerticalAlign", name: "VerticalAlign", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetVerticalAlign", name: "SetVerticalAlign", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Visibility", name: "Visibility", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetVisibility", name: "SetVisibility", pkg: "", typ: $funcType([$String], [], false)}, {prop: "WhiteSpace", name: "WhiteSpace", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetWhiteSpace", name: "SetWhiteSpace", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Width", name: "Width", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetWidth", name: "SetWidth", pkg: "", typ: $funcType([$String], [], false)}, {prop: "WordBreak", name: "WordBreak", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetWordBreak", name: "SetWordBreak", pkg: "", typ: $funcType([$String], [], false)}, {prop: "WordSpacing", name: "WordSpacing", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetWordSpacing", name: "SetWordSpacing", pkg: "", typ: $funcType([$String], [], false)}, {prop: "WordWrap", name: "WordWrap", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetWordWrap", name: "SetWordWrap", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Widows", name: "Widows", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetWidows", name: "SetWidows", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ZIndex", name: "ZIndex", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetZIndex", name: "SetZIndex", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType.methods = [{prop: "ActiveElement", name: "ActiveElement", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "CreateElement", name: "CreateElement", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "CreateTextNode", name: "CreateTextNode", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "GetElementById", name: "GetElementById", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "ClassList", name: "ClassList", pkg: "", typ: $funcType([], [ptrType$3], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ptrType$4], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [ptrType], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, funcType, sliceType$1], [], true)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, funcType, sliceType$1], [], true)}, {prop: "RemoveAllChildNodes", name: "RemoveAllChildNodes", pkg: "", typ: $funcType([], [], false)}, {prop: "AppendBefore", name: "AppendBefore", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "AppendAfter", name: "AppendAfter", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "IsFocused", name: "IsFocused", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Style", name: "Style", pkg: "", typ: $funcType([], [ptrType$1], false)}, {prop: "Value", name: "Value", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetValue", name: "SetValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([ptrType, ptrType], [ptrType], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([ptrType], [$Bool], false)}, {prop: "IsSameNode", name: "IsSameNode", pkg: "", typ: $funcType([ptrType], [$Bool], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([ptrType], [ptrType], false)}];
 	ptrType$4.methods = [{prop: "X", name: "X", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Y", name: "Y", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Width", name: "Width", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Height", name: "Height", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Top", name: "Top", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Right", name: "Right", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Bottom", name: "Bottom", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Left", name: "Left", pkg: "", typ: $funcType([], [$Float64], false)}];
 	Event.methods = [{prop: "Target", name: "Target", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "Key", name: "Key", pkg: "", typ: $funcType([], [$String], false)}, {prop: "KeyCode", name: "KeyCode", pkg: "", typ: $funcType([], [$Int], false)}];
 	ptrType$3.methods = [{prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Add", name: "Add", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Remove", name: "Remove", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Toggle", name: "Toggle", pkg: "", typ: $funcType([$String], [], false)}];
