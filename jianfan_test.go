@@ -15,6 +15,7 @@ var testMapping = map[string]string{
 	//"臺灣 taiwan 台湾":         "台湾 taiwan 台湾",
 }
 
+// FIXME: 注 => 註 (Simplified => Traditional) for all cases
 func TestGoJianfan(t *testing.T) {
 	for cht, chs := range testMapping {
 		if T2S(cht) != chs {

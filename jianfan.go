@@ -42,6 +42,7 @@ func T2S(s string) string {
 
 // Convert Simplified Chinese to Traditional Chinese
 func S2T(s string) string {
+	// FIXME: 注 => 註 (Simplified => Traditional) for all cases
 	var cht []rune
 	for _, runeValue := range s {
 		v, ok := s2tMapping[runeValue]
