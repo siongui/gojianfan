@@ -3,7 +3,7 @@
 # it is also not allowed to use relative path in GOPATH
 ifndef GOROOT
 export GOROOT=$(realpath ../go)
-export PATH := $(GOROOT)/bin:$(GOPATH)/bin:$(PATH)
+export PATH := $(GOROOT)/bin:$(PATH)
 endif
 
 test: fmt
