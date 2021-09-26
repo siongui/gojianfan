@@ -3,8 +3,10 @@
 //
 // This is a primitive implementation of Chinese conversion, based on
 // python-jianfan https://code.google.com/archive/p/python-jianfan/
-// . If you need more advanced converter, please visit
-// OpenCC https://github.com/BYVoid/OpenCC
+// . If you need more advanced converter, please visit OpenCC
+// https://github.com/BYVoid/OpenCC
+// . Or pure Go implementation of OpenCC:
+// https://github.com/liuzl/gocc and https://github.com/sgoby/opencc
 package gojianfan
 
 import (
@@ -26,7 +28,7 @@ func init() {
 	}
 }
 
-// Convert Traditional Chinese to Simplified Chinese
+// T2S converts Traditional Chinese to Simplified Chinese
 func T2S(s string) string {
 	var chs []rune
 	for _, runeValue := range s {
@@ -40,7 +42,7 @@ func T2S(s string) string {
 	return string(chs)
 }
 
-// Convert Simplified Chinese to Traditional Chinese
+// S2T converts Simplified Chinese to Traditional Chinese
 func S2T(s string) string {
 	// FIXME: 注 => 註 (Simplified => Traditional) for all cases
 	var cht []rune

@@ -5,11 +5,11 @@ Traditional and Simplified Chinese Conversion in Go_
 .. image:: https://img.shields.io/badge/Language-Go-blue.svg
    :target: https://golang.org/
 
-.. image:: https://godoc.org/github.com/siongui/gojianfan?status.png
+.. image:: https://godoc.org/github.com/siongui/gojianfan?status.svg
    :target: https://godoc.org/github.com/siongui/gojianfan
 
-.. image:: https://api.travis-ci.org/siongui/gojianfan.png?branch=master
-   :target: https://travis-ci.org/siongui/gojianfan
+.. image:: https://github.com/siongui/gojianfan/workflows/ci/badge.svg
+    :target: https://github.com/siongui/gojianfan/blob/master/.github/workflows/ci.yml
 
 .. image:: https://goreportcard.com/badge/github.com/siongui/gojianfan
    :target: https://goreportcard.com/report/github.com/siongui/gojianfan
@@ -22,7 +22,8 @@ Traditional and Simplified Chinese Conversion in Go_
 
 Convert Traditional Chinese to/from Simplified Chinese in Go_.
 This implementation is based on `python-jianfan`_, and is very primitive.
-If you need advanced converter, visit OpenCC_ project.
+If you need advanced converter, visit OpenCC_ project, or pure Go implementation
+of OpenCC [13]_.
 
 
 Install
@@ -55,8 +56,7 @@ Usage
 
 Tested on:
 
-  - `Ubuntu 16.10`_
-  - `Go 1.8`_
+  - `Go 1.17.1`_
 
 
 UNLICENSE
@@ -92,13 +92,14 @@ References
         | `responsive textarea - Yandex search <https://www.yandex.com/search/?text=responsive+textarea>`_
 .. [11] `Go Report Card | Go project code quality report cards <https://goreportcard.com/>`_
 .. [12] `Shields.io: Quality metadata badges for open source projects  <https://shields.io/>`_
+.. [13] | `GitHub - liuzl/gocc: Golang version OpenCC 繁簡轉換 <https://github.com/liuzl/gocc>`_
+        | `GitHub - sgoby/opencc: 基于OpenCC中文简繁体转换的golang开发包 <https://github.com/sgoby/opencc>`_
 
 .. _Go: https://golang.org/
 .. _python-jianfan: https://code.google.com/archive/p/python-jianfan/
 .. _OpenCC: https://github.com/BYVoid/OpenCC
-.. _Ubuntu 16.10: http://releases.ubuntu.com/16.10/
-.. _Go 1.8: https://golang.org/dl/
-.. _UNLICENSE: http://unlicense.org/
+.. _Go 1.17.1: https://golang.org/dl/
+.. _UNLICENSE: https://unlicense.org/
 
 .. |godoc1| image:: https://godoc.org/github.com/stevenyao/go-opencc?status.png
    :target: https://godoc.org/github.com/stevenyao/go-opencc
